@@ -10997,3 +10997,138 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+
+
+/* Services
+---------------------------------------- */
+
+.page-section .services-box {
+  margin: 25px -15px;
+}
+
+.page-section .services-box:before {
+  content: "";
+  display: table;
+}
+
+.page-section .services-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-section .services-box-item {
+  position: relative;
+  color: #717c8e;
+  text-decoration: none;
+  -webkit-perspective: 750px;
+  -ms-perspective: 750px;
+  -o-perspective: 750px;
+  perspective: 750px;
+  margin: 15px 0;
+  float: left;
+}
+
+.page-section .services-box-item:hover,
+.page-section .services-box-item:focus,
+.page-section .services-box-item.hover {
+  text-decoration: none;
+}
+
+.page-section .services-box-item:hover>.services-box-item-cover,
+.page-section .services-box-item:focus>.services-box-item-cover,
+.page-section .services-box-item.hover>.services-box-item-cover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.page-section .services-box-item:hover>.services-box-item-content,
+.page-section .services-box-item:focus>.services-box-item-content,
+.page-section .services-box-item.hover>.services-box-item-content {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.page-section .services-box-item-cover,
+.page-section .services-box-item-content {
+  position: relative;
+  border-radius: 3px;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.page-section .services-box-item-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0px 15px;
+  box-shadow: 0px 0px 3px 1px #ddd;
+  border-radius: 7px;
+}
+
+.page-section .services-box-item-cover:before,
+.page-section .services-box-item-cover:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.page-section .services-box-item-cover:before {
+  margin: -40px 0px 0px -20px;
+  font-size: 40px;
+}
+
+.page-section .services-box-item-cover:after {
+  content: attr(data-headline);
+  font-family: "Raleway";
+  left: 0;
+  width: 100%;
+  margin: 20px 0 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.page-section .services-box-item-content {
+  overflow: hidden;
+  margin: -16px -6px;
+  padding: 30px 40px;
+  font-size: 14px;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border-radius: 7px;
+}
+
+.page-section .services-box-item-content:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -60px;
+  font-size: 228px;
+  opacity: 0.2;
+}
+
+.page-section .services-box-item-content h2 {
+  position: relative;
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: Capitalize;
+}
+
+.page-section .services-box-item-content p {
+  line-height: 23px;
+  position: relative;
+  margin: 12px 0;
+  font-size: 13px;
+}
